@@ -1,20 +1,132 @@
+a {
+    text-decoration: none;
+}
+
+.fixed-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #ffffff; /* スクロールしたときに背景が白に変わるように */
+    box-shadow: 0px 5px 5px 0px rgba(133, 133, 133, 0.5);
+}
+
+/* ナビゲーションが fixed のときの余白を考慮 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
 nav {
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 5px 0px rgba(133, 133, 133, 0.5);
+}
+
+.nav-1 {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(205, 218, 217);
+    padding: 1px; /* 適切なパディングを指定してください */
+}
+
+.JP {
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
+    right: 670px;
 }
 
-nav ul {
-    padding: 0;
-    margin: 0;
+.JP img {
+    width: 20px;
+    margin-right: 5px; /* 適切なマージンを指定してください */
+}
+
+.JP span {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.JP span a {
+    color: #004441;
+}
+
+
+.nav-2 {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /* 適切なパディングを指定してください */
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff; /* ナビゲーションがスクロールで表示される際の背景色 */
+    box-shadow: 0px 5px 5px 0px rgba(133, 133, 133, 0.5);
+    height: 42px;
 }
 
-nav ul li {
+.nav-2.fixed-nav {
+    top: 0;
+    height: 35px;
+}
+
+.logo {
+    width: 120px; /* 適切な幅を指定してください */
+}
+
+.logo:hover {
+    opacity: 0.8;
+}
+
+.nav-ul {
+    position: fixed;
+    left: 850px;
     list-style: none;
     display: flex;
-    align-items: center;
+    margin: 0;
 }
 
-nav img {
-    width: 130px; 
+.nav-text {
+    font-weight: bold;
+    margin-right: 32px; /* 適切なマージンを指定してください */
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: #004441;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .header-img {
+    width: 75.5%;
+    margin-top: 60px;
+    top: -10px;
+}
+
+.header-text {
+    position: absolute;
+    top: 300px;
+    left: 50px;
+    width: 20%;
+    color: #004441;
+}
+
+.header-main-text {
+    display: block;
+    font-size: 36px;
+}
+
+.header-2-text {
+    display: block;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+.header-button-text {
+    display: block;
+    margin-top: 200px;
 }
